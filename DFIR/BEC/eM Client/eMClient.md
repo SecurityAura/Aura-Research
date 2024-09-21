@@ -114,11 +114,11 @@ https://learn.microsoft.com/en-us/office/client-developer/outlook/mapi/tnef-corr
 
 As for the second email, I, by pure luck to be honest, managed to find it in my Outlook and found out that the Message-Id was:
 
-Message-ID: <[e6179a1ea0d8435a84af89d9b24e5c76-JFBVALKQOJXWILKCJQZFA7CTNN4XAZKDOBRXYVLTMVZEK3TBMJWGKZD4IV4G6U3NORYA====@microsoft.com]>
+*Message-ID: <[e6179a1ea0d8435a84af89d9b24e5c76-JFBVALKQOJXWILKCJQZFA7CTNN4XAZKDOBRXYVLTMVZEK3TBMJWGKZD4IV4G6U3NORYA====@microsoft.com]>*
 
 However, when looking at the partHeader for that email in the eM Client database, the Message-ID is:
 
-Message-ID: <>
+*Message-ID: <>*
 
 Why? Who knows. Maybe the brackets ([ ]) in the actual Message-ID are messing up the eM Client? Maybe I mishandled my char array conversion to string for the partHeader blob. But at this point, I was satisfied in identifying why both emails were "amiss" in the results.
 
